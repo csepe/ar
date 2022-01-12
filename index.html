@@ -54,8 +54,13 @@
       </a-entity>
     </a-nft>
 
-    <a-marker type='pattern' url='./pattern-piller_logo.patt'>
+
+    <a-nft type="nft" markerhandler url="./piller_logo" smooth="true" smoothCount="10" smoothTolerance=".01"
+      smoothThreshold="5">
       <a-box position='0 0.5 0' material='color: red;'></a-box>
+    </a-nft>
+    <a-marker type='pattern' url='./pattern-piller_logo.patt'>
+      <a-box position='0 0.5 0' material='color: blue;'></a-box>
     </a-marker>
     <a-marker preset='hiro'>
       <a-entity animation="property: rotation; from: 0 0 0; to: 0 360 0 ; loop: true; elasticity:1000; dur: 2000"
@@ -65,6 +70,7 @@
       <a-box position='0 0.5 0' material='color: blue;'></a-box>
     </a-marker>
 
+    
     <a-entity camera></a-entity>
   </a-scene>
 </body>
